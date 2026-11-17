@@ -1,8 +1,9 @@
 package Dominio;
 
 public class Colaborador extends AbsPessoa {
+    //Atributos
     private String cargo;
-
+    //Propiedades
     public String getCargo() {
         return cargo;
     }
@@ -10,7 +11,7 @@ public class Colaborador extends AbsPessoa {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
-
+    //Métodos
     @Override
     public void exibir(){
         System.out.println("[Colaborador] Código: " + this.codigo);
@@ -18,7 +19,7 @@ public class Colaborador extends AbsPessoa {
         System.out.print(" | CPF: " + this.cpf);
         System.out.println("| Cargo: " + this.cargo);
     }
-
+    //Construtores
     public Colaborador(){}
 
     public Colaborador(int codigo, String nome, String cpf, String cargo){
