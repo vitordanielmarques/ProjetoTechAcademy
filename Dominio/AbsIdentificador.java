@@ -13,7 +13,7 @@ public abstract class AbsIdentificador {
     }
     //Contrutor vazio.
     public AbsIdentificador(){}
-    //Construtor recebe codigo como parametro.
+    //Construtor recebe codigo como parametro. atributo codigo recendo a variavel codigo.
     public AbsIdentificador(int codigo){
         this.codigo = codigo;
     }
