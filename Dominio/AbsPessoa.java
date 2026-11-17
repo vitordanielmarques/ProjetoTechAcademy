@@ -1,9 +1,10 @@
 package Dominio;
 
 public abstract class AbsPessoa extends AbsIdentificador {
+    //Atributos
     protected String nome;
     protected String cpf;
-
+    //Propiedades
     public String getNome(){
         return this.nome;
     }
@@ -19,11 +20,11 @@ public abstract class AbsPessoa extends AbsIdentificador {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
+    //Métodos
     public abstract void exibir();
-
+    //Construtores
     public AbsPessoa(){}
-
+    //Este segundo contrutor tem que ter os atributos da classe.
     public AbsPessoa(int codigo, String nome, String cpf){
         super(codigo);
         this.nome = nome;
