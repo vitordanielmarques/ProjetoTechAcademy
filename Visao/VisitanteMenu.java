@@ -63,6 +63,10 @@ public class VisitanteMenu extends AbsMenu {
         String motivo = this.scan.nextLine();
         System.out.print("Nº do crachá: ");
         int cracha = this.lerInt();
+        while (cracha <= 0){
+            System.out.print("Digite um número válido para o crachá: ");
+            cracha = this.lerInt();
+        }
         System.out.print("Setor: ");
         String setor = this.scan.nextLine();
 
