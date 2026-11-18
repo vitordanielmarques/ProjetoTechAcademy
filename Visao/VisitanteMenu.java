@@ -1,7 +1,5 @@
 package Visao;
-
 import java.util.Scanner;
-
 import Dominio.Visitante;
 import Servico.VisitanteServ;
 import Tools.Util;
@@ -139,19 +137,7 @@ public class VisitanteMenu extends AbsMenu {
                 System.out.println("Registro excluído.");
             }
         }
-    }
-
-    private String perguntar(String rotulo, String atual){
-        System.out.print(rotulo + " [" + atual + "]: ");
-        String entrada = this.scan.nextLine().trim();
-        return entrada.isEmpty() ? atual : entrada;
-    }
-
-    private int perguntarInt(String rotulo, int atual){
-        System.out.print(rotulo + " [" + atual + "]: ");
-        String entrada = this.scan.nextLine().trim();
-        return entrada.isEmpty() ? atual : this.converterInt(entrada, atual);
-    }        
+    }  
 
     public VisitanteMenu(){
         this.servico = new VisitanteServ();

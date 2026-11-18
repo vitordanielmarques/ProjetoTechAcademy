@@ -27,7 +27,7 @@ public abstract class AbsMenu {
 
     protected int lerInt(){
     return this.converterInt(this.scan.nextLine(), -1);
-}
+    }
 
     protected int converterInt(String texto, int padrao){
         try {
@@ -35,5 +35,17 @@ public abstract class AbsMenu {
         } catch (NumberFormatException e){
             return padrao;
         }
-    }  
+    }
+    
+    protected String perguntar(String rotulo, String atual){
+        System.out.print(rotulo + " [" + atual + "]: ");
+        String entrada = this.scan.nextLine().trim();
+        return entrada.isEmpty() ? atual : entrada;
+    }
+
+    protected int perguntarInt(String rotulo, int atual){
+        System.out.print(rotulo + " [" + atual + "]: ");
+        String entrada = this.scan.nextLine().trim();
+        return entrada.isEmpty() ? atual : this.converterInt(entrada, atual);
+    }
 }
