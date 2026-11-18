@@ -109,7 +109,7 @@ public class VisitanteMenu extends AbsMenu {
             return;
         }
         visitante.exibir();
-        System.out.println("Pressione Enter para manter o valor atual.");
+        System.out.println("\nPressione Enter para manter o valor atual.");
 
         visitante.setNome(this.perguntar("Nome", visitante.getNome()));
         visitante.setCpf(this.perguntar("CPF", visitante.getCpf()));
